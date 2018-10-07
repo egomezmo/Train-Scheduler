@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TrainTime</title>     <!-- Titulo pagina-->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        <!-- Devices -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- libreria Jquery -->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>            <!-- libreria moment -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>             <!-- libreria firebases -->
+
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />    <!-- resetear CSS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />    <!-- estilos CSS -->
+     
+    </head>
+
+    <body>
+        <div class="container">
+
+                <div class="jumbotron" id="header">
+                    <h1>Tokyo Railway Station</h1>
+                    <h2>トレインステーション東京</h2>
+                </div>
+
+            <div class="panel panel-primary">
+                    <div class="panel-heading" id="panelOne">
+                        <p id="currenTime1">Current Train Scheduled</p>
+                        <p id="currenTime">Current Time: 00:00</p>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped" id="employe-table"> 
+                            <thead>
+                                <tr>
+                                    <th>TRAIN NAME</th>
+                                    <th>DESTINATION</th>
+                                    <th>FRECUENCY</th>
+                                    <th>NEXT ARRIVAL</th>
+                                    <th>MINUTES AWAY</th>
+                                </tr>
+                            </thead>
+                            <tbody id="inserta">
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+            </div>
+
+
+            <div class="panel panel-primary">
+                    <div class="panel-heading" id="panelOne">Add Train</div>
+                    <div class="panel-body">
+
+                    <form >
+                        <div class="form-group">
+                            <p>Train Name:</p>
+                            <input type="text" name="addTrain" class="form-control" id="tName">
+                        </div>
+
+                    <div class="form-group">
+                        <p>Destination:</p>
+                        <input type="text" class="form-control" name="addTrain" id="tDestination">
+                    </div>
+
+                    <div class="form-group">
+                        <p>First time train:</p>
+                        <input type="text" class="form-control" name="addTrain" id="tFirstTime">
+                    </div>
+
+                    <div class="form-group">
+                        <p>Frecuency (min):</p>
+                        <input type="text" class="form-control" name="addTrain" id="tFrecuency">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-warning"" id="submit">Submit</button>
+                  </form>
+            </div>
+
+            
+        </div>
+        <script src="assets/javascript/app.js"></script>    <!-- si se dirige archivo javascript --> 
+    </body> 
+</html>

@@ -1,0 +1,47 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #E5E7E9 ;
+     
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+#header{
+    color:white;
+    background: #1F618D;
+    height: 200px;
+    line-height: 1.5;
+}
+
+th{
+    font-weight: 700;
+}
+.titlesDiv{
+    color:white; 
+}
+
+#panelOne{    
+    height: 40px;
+}
+
+
+#currenTime1{
+    float:left;
+}
+
+#currenTime{
+    float:right;
+    font-size: 20px;
+    
+    font-weight: 700;
+}
+
+#submit{
+    background: #1F618D;
+}
+#panelOne{
+    background: black;
+}
